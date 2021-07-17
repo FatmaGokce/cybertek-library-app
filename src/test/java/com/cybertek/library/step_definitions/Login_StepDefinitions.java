@@ -44,6 +44,7 @@ public class Login_StepDefinitions {
     public void i_enter_username(String username) {
         loginPage.loginParamUser(username);
     }
+
     @When("I enter password {string}")
     public void i_enter_password(String password) {
         loginPage.loginParamPass(password);

@@ -4,7 +4,7 @@ Feature: Login with parameters
 
   Background: Assuming user is on the login page
 
-
+  @wip
   Scenario: Login as librarian 11
     Given I am on the login page
     When I enter username "librarian11@library"
@@ -12,16 +12,16 @@ Feature: Login with parameters
     And click the sign in button
     Then dashboard should be displayed
 
-
+  @wip1
   Scenario: Login as librarian 12
     Given I am on the login page
     When I enter username "librarian12@library"
     And I enter password 'AOYKYTMJ'
     And click the sign in button
     Then dashboard should be displayed
-    And there should be 5561 users
+    And there should be 5563 users
 
-  @Wip
+  @wip2
   Scenario: Login as librarian same line
     Given I am on the login page
     When I login using "librarian12@library" and "AOYKYTMJ"
