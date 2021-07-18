@@ -67,7 +67,7 @@ public class Login_StepDefinitions {
         String actualUserNum = dashboardPage.userNum.getText();
         String expectedUserNum = Integer.toString(userNumber);
 
-        Assert.assertTrue(actualUserNum.equals(expectedUserNum));
+        Assert.assertEquals(expectedUserNum,actualUserNum);
 
     }
 
